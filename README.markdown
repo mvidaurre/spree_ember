@@ -9,7 +9,7 @@ Please submit fixes/improvements with pull requests. Tests are *especially* welc
 To install this frontend, put this in your application's Gemfile:
 
 ```ruby
-gem 'spree_ember_frontend', github: 'radar/spree_ember_frontend'
+gem 'spree_ember_frontend', github: 'venkatesh3007/spree_ember_frontend'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 ```
 
