@@ -19,4 +19,4 @@ Spree.App = Ember.Application.create
   Resolver: Spree.Resolver,
 
 $.ajaxPrefilter (options, originalOptions, jqXHR) ->
-  jqXHR.setRequestHeader('X-Spree-Token', 'fake')
+  jqXHR.setRequestHeader('X-Spree-Token', '13710f191e76e85e411760f810c5ba1ecdba0815da5a3d31')
