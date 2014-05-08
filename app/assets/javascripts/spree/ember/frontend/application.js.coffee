@@ -4,7 +4,6 @@
 //= require spree
 //= require_self
 //= require ./frontend
-//= require tree.jquery
 
 Spree.Resolver = Ember.DefaultResolver.extend
   resolveTemplate: (parsedName) ->
