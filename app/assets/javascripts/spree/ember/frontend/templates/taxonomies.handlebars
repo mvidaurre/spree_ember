@@ -1,8 +1,5 @@
 <div class="list-group">
   {{#each}}
     <h6>Shop by {{root.name}}</h6>
-    {{#each taxon in root.taxons}}
-      {{#link-to 'taxon.permalink' taxon class="list-group-item"}}{{taxon.name}}{{/link-to}}
-    {{/each}}
   {{/each}}
 </div>
