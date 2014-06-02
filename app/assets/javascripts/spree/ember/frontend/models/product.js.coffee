@@ -1,11 +1,13 @@
-Spree.App.Product = Ember.Object.extend({});
+Spree.App.Product = DS.Model.extend
+  name: DS.attr('string')
+  description: DS.attr('string')
+  price: DS.attr('number')
+  variants: DS.hasMany('variant')
 
-Spree.App.Product.reopenClass
-  findAll: ->
-    $.getJSON("/api/products.json").then (response) ->
-      response.products.map (product) ->
-        Spree.App.Product.create product
+  images: (->
+    @get('variants.firstObject.images')
+  ).property('variants.firstObject.images')
 
-  find: (slug) ->
-    $.getJSON("/api/products/#{slug}.json").then (response) ->
-      Spree.App.Product.create(response.product)
+  mainImage: (->
+    @get('images.firstObject')
+  ).property('images.firstObject')

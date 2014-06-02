@@ -1,5 +1,5 @@
 # For more information see: http://emberjs.com/guides/routing/
 
 Spree.App.Router.map ->
-  @route 'products', { path: '/' }
-  @resource 'product', { path: '/product/:slug' }
+  @resource 'products', ->
+    @resource 'product', { path: ':slug' }
