@@ -1,6 +1,7 @@
 //= require jquery
 //= require handlebars
 //= require ember
+//= require ember-data
 //= require spree
 //= require_self
 //= require ./frontend

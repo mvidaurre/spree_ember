@@ -14,3 +14,4 @@ gemspec
 # gem 'debugger'
 
 gem 'ember-rails', github: 'emberjs/ember-rails'
+gem 'ember-data'
