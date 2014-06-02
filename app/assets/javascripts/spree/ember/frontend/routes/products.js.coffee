@@ -1,4 +1,4 @@
-Spree.App.ProductsIndexRoute = Ember.Route.extend
+Spree.App.ProductsRoute = Ember.Route.extend
   model: ->
     @store.find('product')
   
