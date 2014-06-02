@@ -6,7 +6,7 @@
 //= require_self
 //= require ./frontend
 
-window.Spree.App = Ember.Application.create
+Spree.App = Ember.Application.create
   ready: ->
     apiKey = 'ad76617dfee35d1b793d8d67187e85c7075ccea6bed232c9'
 
