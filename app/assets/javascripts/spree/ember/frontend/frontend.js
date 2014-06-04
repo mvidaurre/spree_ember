@@ -6,5 +6,6 @@
 //= require_tree ./components
 //= require_tree ./templates
 //= require ./router
+//= require ./store
 //= require_tree ./routes
 //= require_self

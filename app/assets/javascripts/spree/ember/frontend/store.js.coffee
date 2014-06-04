@@ -14,5 +14,6 @@ Spree.App.ApplicationSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRec
     @_super(store, type, payload)
 )
 
-Spree.App.ApplicationAdapter = DS.RESTAdapter.extend
-  namespace: 'api'
+Spree.App.Store = DS.Store.extend
+  adapter: DS.RESTAdapter.extend
+    namespace: 'api'
