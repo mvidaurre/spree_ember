@@ -2,6 +2,7 @@ Spree.App.ApplicationSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRec
   attrs: {
     images: { embedded: 'always' }
     variants: { embedded: 'always' }
+    master : { embedded: 'always' }
   }
 
   extractArray: (store, type, payload) ->
