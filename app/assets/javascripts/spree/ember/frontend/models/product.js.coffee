@@ -3,10 +3,11 @@ Spree.App.Product = DS.Model.extend
   description: DS.attr('string')
   price: DS.attr('number')
   variants: DS.hasMany('variant')
+  master: DS.hasMany('master')
 
   images: (->
-    @get('variants.firstObject.images')
-  ).property('variants.firstObject.images')
+    @get('master.firstObject.images')
+  ).property('master.firstObject.images')
 
   mainImage: (->
     @get('images.firstObject')
