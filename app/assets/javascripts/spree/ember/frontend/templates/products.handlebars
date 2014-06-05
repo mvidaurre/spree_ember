@@ -1,7 +1,10 @@
 <div id="products" class="row" data-hook>
   <ul>
-    {{#each}}
-      <li>{{name}}</li>
+    {{#each product in controller}}
+      <li>
+        <img {{bind-attr src="product.mainImage.productUrl" alt="product.mainImage.alt"}}>
+        {{ product.name }}
+      </li>
     {{/each}}
   </ul>
 </div>
