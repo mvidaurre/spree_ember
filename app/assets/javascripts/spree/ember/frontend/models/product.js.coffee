@@ -6,8 +6,8 @@ Spree.App.Product = DS.Model.extend
   master: DS.belongsTo('master')
 
   images: (->
-    @get('master.firstObject.images')
-  ).property('master.firstObject.images')
+    @get('master.images')
+  ).property('master.images')
 
   mainImage: (->
     @get('images.firstObject')

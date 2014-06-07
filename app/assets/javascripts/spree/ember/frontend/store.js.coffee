@@ -13,6 +13,7 @@ Spree.App.ApplicationSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRec
     delete payload.current_page
     
     @_super(store, type, payload)
+    
 )
 
 Spree.App.Store = DS.Store.extend
