@@ -2,8 +2,8 @@ Spree.App.Product = DS.Model.extend
   name: DS.attr('string')
   description: DS.attr('string')
   price: DS.attr('number')
-  master: DS.belongsTo('master')
-
+  variants: DS.hasMany('variant')
+  
   images: (->
     @get('master.images')
   ).property('master.images')
