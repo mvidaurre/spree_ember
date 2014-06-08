@@ -4,6 +4,7 @@ Spree.App.Product = DS.Model.extend
   price: DS.attr('number')
   variants: DS.hasMany('variant')
   master: DS.belongsTo('master')
+  product_properties: DS.hasMany('product_property')
 
   images: (->
     @get('master.images')
