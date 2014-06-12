@@ -14,3 +14,4 @@ gemspec
 # gem 'debugger'
 
 gem 'ember-rails', git: 'https://github.com/venkatesh3007/ember-rails.git', branch: 'master'
+gem 'ember-data-source', git: 'https://github.com/venkatesh3007/data.git', branch: 'master'

@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/venkatesh3007/data.git
+  revision: 410d62d6e03537c030843cf44da9097bce790a9a
+  branch: master
+  specs:
+    ember-data-source (1.0.0.beta.9.canary)
+      ember-source
+
+GIT
   remote: https://github.com/venkatesh3007/ember-rails.git
   revision: 320b42b840c657a708ce8c7d78e683f9c1ed6093
   branch: master
@@ -209,6 +217,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails
+  ember-data-source!
   ember-rails!
   pry
   qunit-rails
