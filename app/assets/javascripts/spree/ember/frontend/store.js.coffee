@@ -10,7 +10,7 @@ Spree.App.ApplicationSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRec
     delete payload.pages
     delete payload.per_page
     delete payload.total_count
-    delete current_page
+    delete payload.current_page
 
     @_super(store, type, payload)
 
