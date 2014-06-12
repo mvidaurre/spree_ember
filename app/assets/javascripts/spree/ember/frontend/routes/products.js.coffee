@@ -4,3 +4,4 @@ Spree.App.ProductsRoute = Ember.Route.extend
 
   renderTemplate: ->
     @render 'products', outlet: 'content'
+    @render 'taxonomies', outlet: 'sidebar'
