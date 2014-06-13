@@ -3,3 +3,5 @@
 Spree.App.Router.map ->
   @resource 'products', { path: '/' }, ->
     @resource 'product', { path: ':slug' }
+  
+  @resource 'taxonomies'
