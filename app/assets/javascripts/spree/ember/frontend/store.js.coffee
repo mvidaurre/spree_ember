@@ -16,20 +16,6 @@ Spree.App.ProductSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecords
 
 )
 
-Spree.App.TaxonomySerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecordsMixin,
-  attrs: {
-    root: { embedded: 'always' }
-    taxons: { embedded: 'always' }
-  }
-    
-  extractArray: (store, type, payload) ->
-    delete payload.count
-    delete payload.pages
-    delete payload.current_page
-
-    @_super(store, type, payload)
-)
-
 Spree.App.Store = DS.Store.extend
   adapter: DS.RESTAdapter.extend
     namespace: 'api'
