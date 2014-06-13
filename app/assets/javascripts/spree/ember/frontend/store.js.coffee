@@ -1,4 +1,4 @@
-Spree.App.ApplicationSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecordsMixin,
+Spree.App.ProductSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecordsMixin,
   attrs: {
     master: { embedded: 'always' }
     images: { embedded: 'always' }
@@ -14,6 +14,20 @@ Spree.App.ApplicationSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRec
 
     @_super(store, type, payload)
 
+)
+
+Spree.App.TaxonomySerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecordsMixin,
+  attrs: {
+    root: { embedded: 'always' }
+    taxons: { embedded: 'always' }
+  }
+    
+  extractArray: (store, type, payload) ->
+    delete payload.count
+    delete payload.pages
+    delete payload.current_page
+
+    @_super(store, type, payload)
 )
 
 Spree.App.Store = DS.Store.extend
