@@ -1,4 +1,4 @@
-Spree.App.ProductSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecordsMixin,
+Spree.App.ProductsSerializer = DS.ActiveModelSerializer.extend(DS.EmbeddedRecordsMixin,
   attrs: {
     master: { embedded: 'always' }
     images: { embedded: 'always' }
